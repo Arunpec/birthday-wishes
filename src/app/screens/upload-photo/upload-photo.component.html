@@ -1,0 +1,38 @@
+<div class="a">
+  <div class="photo-container">
+    <div class="friendship-message">
+      <p>"A best friend is like a star; even when you can't see them, you know they are always there." 🌟</p>
+      <p>"Life is better with true friends, and I am lucky to have you!" 💖</p>
+    </div>
+    <!-- Background Audio -->
+    <audio #backgroundAudio autoplay loop>
+      <source [src]="currentSong" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>  
+
+    <!-- Slideshow Controls -->
+    <button class="pause-btn" (click)="toggleSlideshow()">
+      {{ isPaused ? '▶ Play Slideshow' : '❚❚ Pause Slideshow' }}
+    </button>
+
+    
+
+    <!-- Slideshow -->
+    <div class="slideshow" #slideshow>
+      <div class="slide" *ngFor="let photo of photos">
+        <img [src]="photo" alt="Memorable Photo" />
+      </div>
+    </div>
+<!-- Song Change Button -->
+<button class="change-song-btn" (click)="changeSong()">🔄 Change Song</button>
+    <!-- Navigation Buttons -->
+    <div class="navigation">
+      <button class="back-btn" (click)="goBack()">← Back to Welcome</button>
+      <button class="next-btn" (click)="goNext()">Next Surprise! →</button>
+    </div>
+ 
+  </div>
+</div>
+
+<!-- Floating Hearts Background -->
+<div class="hearts-container"></div>

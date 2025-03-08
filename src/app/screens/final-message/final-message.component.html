@@ -1,0 +1,25 @@
+<div class="final-message-container">
+    <!-- Background Animation -->
+    <div class="hearts-container">
+        <div *ngFor="let heart of hearts" class="heart" [ngStyle]="{'left': heart.left, 'animationDuration': heart.duration}"></div>
+    </div>
+
+    <!-- Message Content -->
+    <div class="message-content">
+        <h1>🎉 Hope you enjoyed this surprise! 🎈</h1>
+        <p>Wishing you once again a very Happy Birthday! 🎂🥳</p>
+        <p>Now that the surprise is over, it's time for the **real celebration**... 🎊</p>
+        <p>Where's my **treat**? 😋🍕🍔 Biryani? Pizza? Or should I just wait for ₹100 GPay instead? 😂💸</p>
+        <p>If you're feeling generous, here’s my GPay number:</p>
+
+        <div class="gpay-number">
+            📲 <strong>6379449497</strong> (Google Pay Accepted 😜)
+        </div>
+
+        <p>Don’t make me send reminders... I'm an expert at follow-ups! 🤭</p>
+        <p>Come on, make my day too! Waiting... ⏳😂</p>
+
+        <button class="treat-btn" (click)="sendTreat()">Send GPay Now 💰</button>
+        <button class="back-home-btn" (click)="goHome()">Back to Home 🏠</button>
+    </div>
+</div>

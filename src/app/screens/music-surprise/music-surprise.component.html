@@ -1,0 +1,37 @@
+<div class="surprise-container">
+
+    <!-- Background Music -->
+    <audio #backgroundAudio autoplay loop>
+      <source src="assets/song3.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  
+    <!-- Balloons -->
+    <div *ngFor="let balloon of balloons" class="balloon" [ngStyle]="{'left': balloon.left}"></div>
+  
+    <!-- Fireworks -->
+    <div *ngFor="let firework of fireworks" class="firework" [ngStyle]="{'left': firework.left, 'top': firework.top}"></div>
+  
+    <!-- Left Photo -->
+    <img src="assets/photo1.png" class="photo photo-left" />
+
+    <!-- Right Photo -->
+    <img src="assets/photo2.jpg" class="photo photo-right" />
+
+    <!-- Birthday Cake -->
+    <div class="cake">
+      <div class="candle"></div>
+    </div>
+  
+    <!-- Birthday Message -->
+    <div class="birthday-message">
+      🎂 Happy Birthday, My Special One! 🎈💖<br>
+      "You're the sweetest part of my life, just like this cake! May your day be filled with love, joy, and surprises!" 🥰🎁
+    </div>
+  
+    <div class="button-container">
+        <button class="back-btn" (click)="goBack()">← Back</button>
+        <button class="next-btn" (click)="goNext()">Next →</button>
+      </div>
+  </div>
+  
