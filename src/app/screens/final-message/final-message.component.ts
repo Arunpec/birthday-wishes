@@ -31,4 +31,7 @@ export class FinalMessageComponent implements OnInit {
   goHome() {
     this.router.navigate(['/home']);
   }
+  aboutYou() {
+    this.router.navigate(['/wishes']);
+  }
 }

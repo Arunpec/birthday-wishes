@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+}
+
+.note-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px dashed #6a0dad;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.note-text {
+    font-size: 24px;
+    color: #333;
+    white-space: pre-wrap;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    color: #6a0dad;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+}

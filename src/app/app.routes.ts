@@ -5,6 +5,8 @@ import { UploadPhotoComponent } from './screens/upload-photo/upload-photo.compon
 import { MusicSurpriseComponent } from './screens/music-surprise/music-surprise.component';
 import { MemoryLaneComponent } from './screens/memory-lane/memory-lane.component';
 import { FinalMessageComponent } from './screens/final-message/final-message.component';
+import  { HandwrittenNoteComponent } from './handwritten-note/handwritten-note.component';
+
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -13,5 +15,7 @@ export const routes: Routes = [
   { path: 'upload-photo', component: UploadPhotoComponent },
   { path: 'music-surprise', component: MusicSurpriseComponent },
   { path: 'memory-lane', component: MemoryLaneComponent },
-  { path: 'final-message', component: FinalMessageComponent }
+  { path: 'final-message', component: FinalMessageComponent },
+  { path: 'hand-written', component: HandwrittenNoteComponent }
+
 ];

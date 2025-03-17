@@ -1,1 +1,12 @@
-<p>wishes works!</p>
+<div class="background">
+    <div class="flower" *ngFor="let flower of flowers"></div>
+  </div>
+  
+  <div class="container">
+    <div class="button-group">
+      <button (click)="generateWish()" @buttonHover>Click for a Wish</button>
+      <button (click)="generateCompliment()" @buttonHover>Click for a Compliment</button>
+    </div>
+    <div *ngIf="showMessage" [@fadeIn] class="message">{{ currentMessage }}</div>
+  </div>
+  
