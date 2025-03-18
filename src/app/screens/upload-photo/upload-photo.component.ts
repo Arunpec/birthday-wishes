@@ -44,7 +44,7 @@ export class UploadPhotoComponent implements OnInit {
   isPaused = false;
   interval: any;
 
-  songs = ['assets/song1.mp3', 'assets/song2.mp3', 'assets/song3.mp3']; // List of songs
+  songs = ['assets/song6.mp3','assets/song5.mp3','assets/song1.mp3', 'assets/song2.mp3', 'assets/song4.mp3']; // List of songs
   currentSong = this.songs[0]; // Default song
 
   ngOnInit() {

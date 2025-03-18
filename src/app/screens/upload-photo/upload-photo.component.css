@@ -136,3 +136,47 @@
   border-radius: 15px;
   box-shadow: 0 2px 10px rgba(255, 75, 43, 0.2);
 }
+
+/* Floating Text Styling */
+.floating-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 10px;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffd700; /* Golden color */
+  animation: floatText 10s linear infinite;
+  z-index: 9999; /* Make sure it's above everything else */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Text Animation */
+@keyframes floatText {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
+.floating {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 10px;
+  left: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ea00ff; /* Golden color */
+  animation: floatText1 5s linear infinite;
+  z-index: 9999; /* Make sure it's above everything else */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Text Animation */
+@keyframes floatText1 {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
